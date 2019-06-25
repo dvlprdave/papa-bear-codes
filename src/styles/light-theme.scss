@@ -2,6 +2,14 @@ body.light {
   background-color: $light-background-color;
   text-shadow: $light-text-shadow;
 
+  //top
+  .top {
+    background: $light-background-color;
+    a {
+      color: $dark-gray
+    }
+  }
+
   // home
   .home-header {
     color: $dark-gray;
