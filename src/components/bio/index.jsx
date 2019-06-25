@@ -40,6 +40,10 @@ export const Bio = () => (
                       Twitter
                     </a>
                   )}
+
+                  <a href={`https://twitter.com/${social.twitter}`}>
+                    Email
+                  </a>
                 </p>
               </div>
             </div>
@@ -65,9 +69,6 @@ const bioQuery = graphql`
         introduction
         social {
           twitter
-          github
-          medium
-          facebook
         }
       }
     }

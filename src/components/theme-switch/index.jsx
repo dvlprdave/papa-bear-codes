@@ -7,7 +7,7 @@ import { THEME } from '../../constants'
 import './index.scss'
 
 function getTheme(checked) {
-  return checked ? THEME.DARK : THEME.LIGHT
+  return checked ? THEME.LIGHT : THEME.DARK
 }
 
 function toggleTheme(theme) {
@@ -52,10 +52,10 @@ export const ThemeSwitch = () => {
           width={48}
           checkedIcon={<div className="icon checkedIcon">L</div>}
           uncheckedIcon={<div className="icon uncheckedIcon">D</div>}
-          offColor={'#d9dfe2'}
-          offHandleColor={'#fff'}
-          onColor={'#999'}
-          onHandleColor={'#282c35'}
+          offColor={'#999'}
+          offHandleColor={'#282c35'}
+          onColor={'#d9dfe2'}
+          onHandleColor={'#fff'}
         />
       </label>
     </div>
