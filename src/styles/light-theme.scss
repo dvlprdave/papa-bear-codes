@@ -28,10 +28,6 @@ body.light {
   }
 
   .category-container {
-    border-top: 1px solid $light-category-border-color;
-    border-bottom: 1px solid $light-category-border-color;
-    border-right: 6px solid $light-category-border-color;
-    border-left: 6px solid $light-category-border-color;
     background-color: $light-category-background-color;
     .item {
       border: 1px solid $light-category-border-color;
@@ -52,6 +48,8 @@ body.light {
   }
 
   .thumbnail {
+    position: relative;
+
     h3 {
       color: $dark-gray;
     }
@@ -60,6 +58,16 @@ body.light {
     }
     &:hover {
       text-shadow: $light-hover-text-shadow;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 1px solid black;
+      margin-top: 5px;
     }
   }
 

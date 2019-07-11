@@ -29,21 +29,11 @@ export const Bio = () => (
                 </Link>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
-                  )}
                   {social.twitter && (
                     <a href={`https://twitter.com/${social.twitter}`}>
                       Twitter
                     </a>
                   )}
-
-                  <a href={`https://twitter.com/${social.twitter}`}>
-                    Email
-                  </a>
                 </p>
               </div>
             </div>
