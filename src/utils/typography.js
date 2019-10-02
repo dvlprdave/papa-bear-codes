@@ -3,6 +3,11 @@ import GitHubTheme from 'typography-theme-github'
 
 GitHubTheme.overrideThemeStyles = () => {
   return {
+    p: {
+      fontSize: 'calc(14px + .5vw)',
+      lineHeight: '1.6',
+      fontWeight: 200
+    },
     a: {
       boxShadow: `none`,
       textDecoration: `none`,
@@ -18,8 +23,9 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h1: {
+      fontSize: 'calc(19px + 1.3vw)',
       fontWeight: 800,
-      lineHeight: 1.2,
+      lineHeight: 'calc(35px + 1.85vw)',
       fontFamily: 'Catamaran',
     },
 

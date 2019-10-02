@@ -1,5 +1,5 @@
 module.exports = {
-  title: `PapaBearCodes`,
+  title: `PapaBear-Codes`,
   description: `Web development blog`,
   author: `David Quick`,
   introduction: `Hi ✌️

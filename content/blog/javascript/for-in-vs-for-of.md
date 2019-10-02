@@ -4,9 +4,15 @@ date: 2019-06-24 22:06:92
 category: JavaScript
 ---
 
-In JavaScript, we use loops to iterate over values and run code until the given condition is met.
+Let's clear something up that will hopefully help you understand the when and why of for..in and for..of before we dive into any examples.
 
-There are quite a few looping statements, but we'll be covering two of the newest ones.
+In JavaScript, we have something called **iterables**. It's simply a data structure that allows you to access a collection of data sequentially. When we go over that data one by one, its called **iteration**.
+
+Iterables are arrays and strings, as they are collections that have an order.
+
+Under the hood, JavaScript has given a method to these iterables called `Symbol.iterator`. This is all built in and is what allows arrays and strings to be iterables without having to do anything to make them so.
+ 
+Great, now that you know what an iterable is, we can get to the core of this post. 
 
 ## for..in  
 Used to loop through properties on an object.  
