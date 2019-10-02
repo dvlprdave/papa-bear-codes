@@ -1,17 +1,14 @@
 module.exports = {
-  title: `PapaBear-Codes`,
+  title: `PapaBearCodes`,
   description: `Web development blog`,
   author: `David Quick`,
   introduction: `Hi ✌️
   I'm Dave, a developer from NY. I write web development articles for all. This is my journal to you. Enjoy!`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://papabearcodes.com`, // Your blog site url
   social: {
     twitter: `papabearcodes`, // Your Twitter account
-    github: ``, // Your GitHub account
-    medium: ``, // Your Medium account
-    facebook: ``, // Your Facebook account
   },
-  icon: `content/assets/felog.png`, // Add your favicon
+  icon: `content/assets/favicon.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.

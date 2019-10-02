@@ -7,7 +7,7 @@ export const Bio = () => (
   <StaticQuery
     query={bioQuery}
     render={data => {
-      const { author, social, introduction } = data.site.siteMetadata
+      const { author, introduction } = data.site.siteMetadata
 
       return (
         <div className="bio">
@@ -19,13 +19,6 @@ export const Bio = () => (
                   <span>@{author}</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
-                <p className="author-socials">
-                  {social.twitter && (
-                    <a href={`https://twitter.com/${social.twitter}`}>
-                      Twitter
-                    </a>
-                  )}
-                </p>
               </div>
             </div>
           </div>
