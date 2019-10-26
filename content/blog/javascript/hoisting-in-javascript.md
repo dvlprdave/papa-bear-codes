@@ -1,7 +1,7 @@
 ---
 title: Hoisting in JavaScript
 date: 2019-10-15 21:10:18
-category: javascript
+category: JavaScript
 ---
 
 I feel it's safe to say that hoisting in JavaScript leads to a lot of confusion and it's mainly due to how it's explained and our condition to take words immediately for what they are. 
