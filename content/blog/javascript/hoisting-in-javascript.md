@@ -18,7 +18,7 @@ function getName(name) {
   console.log(`My name is ${name}`)
 }
 
-getName(Dave) // My name is Dave
+getName('Dave') // My name is Dave
 ```
 
 Above, we declared a function named `getName` and then call it.
@@ -26,7 +26,7 @@ Above, we declared a function named `getName` and then call it.
 Now, let's flip it and call the function before it's declared. 
 
 ```javascript
-getName(Dave) // My name is Dave
+getName('Dave') // My name is Dave
 
 function getName(name) {
   console.log(`My name is ${name}`)
