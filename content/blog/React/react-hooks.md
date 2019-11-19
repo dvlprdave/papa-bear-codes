@@ -6,7 +6,7 @@ category: React
 
 In this guide, we'll take a look into useState by comparing class and function components.
 
-This isn't an in depth look as there are other great features of the useState hook that aren't included in this guide.
+This isn't an in-depth look as there are other great features of the useState hook that aren't included in this guide.
 
 ## What Are Hooks?
 
@@ -21,12 +21,13 @@ I've created a small project that displays two planets using [**React Kawaii**](
 <br>
 
 <iframe
-     src="https://codesandbox.io/embed/vigorous-torvalds-btiky?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="vigorous-torvalds-btiky"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+  src="https://codesandbox.io/embed/vigorous-torvalds-btiky?fontsize=14&hidenavigation=1&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="vigorous-torvalds-btiky"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+>
+</iframe>
 
 ## Class Component
 
@@ -69,11 +70,11 @@ export default PlanetClass
 
 Above, our component has a single state named **emotion** with an initial value of "true". Following this, we have a method called ```handleToggle``` that takes the initial state and provides the opposite.
 
-The ```handleToggle``` method then gets attched to the ```onClick``` event handler within our button, allowing us to click the button and toggle between the ```emotionCondition```.
+The ```handleToggle``` method then gets attached to the ```onClick``` event handler within our button, allowing us to click the button and toggle between the ```emotionCondition```.
 
-The ```emotionCondition``` is a condition that takes the initial state of ```emotion: true``` and provides a property of "blissful" if true otherwise "ko"if false.
+The ```emotionCondition``` is a condition that takes the initial state of ```emotion: true``` and provides a property of "blissful" if true otherwise "ko" if false.
 
-**Please note** that I've used the Class Fields syntax in this class component. This allows me to write property instances directly within the class and eleminates the need to create a constructor and call super (my favorite). If you want to learn more about the Class Fields syntax, I'd highly suggest reading [this article](https://tylermcginnis.com/javascript-private-and-public-class-fields/) by Tyler Mcginnis.
+**Please note** that I've used the Class Fields syntax in this class component. This allows me to write property instances directly within the class and eliminates the need to create a constructor and call super (my favorite). If you want to learn more about the Class Fields syntax, I'd highly suggest reading [this article](https://tylermcginnis.com/javascript-private-and-public-class-fields/) by Tyler Mcginnis.
 
 I am also using an arrow function for the ```handleToggle``` method to avoid binding methods in the constructor since arrow functions have their own "this".
 
@@ -107,17 +108,17 @@ const PlanetHook = () => {
 
 export default PlanetHook
 ```
-At first you'll notice our functional component using hooks has significantly less code (rubs hands together). 
+At first, you'll notice our functional component using hooks has significantly less code (rubs hands together). 
 
 Let's break this down and go over the changes while comparing what we had before. 
 
-Within the first line we've imported ```useState``` as a named export from 'react'.
+Within the first line, we've imported ```useState``` as a named export from 'react'.
 
 ```javascript
 import React, { useState } from 'react';
 ```
 
-Lets move down to line five where we've called ```useState```. 
+Let's move down to line five where we've called ```useState```. 
 
 ```javascript
   const [emotion, setEmotion] = useState(true)
@@ -133,7 +134,7 @@ Within the array the first value will be the name of the state and the second wi
 
 ```setEmotion``` is the equivalent of ```setState``` in a class component. 
 
-Lets take a quick glance at the state in the class and function component. 
+Let's take a quick glance at the state in the class and function component. 
 
 ```javascript
 // Class Component
@@ -159,7 +160,7 @@ The key differences in useState are:
 
 ## How Do I Set State?
 
-Remember, the second value of the array is the setter. We'll use that when updating state. Check out both methods for the class and function component. 
+Remember, the second value of the array is the setter. We'll use that when updating the state. Check out both methods for the class and function component. 
 
 ```javascript
 // Class Component
@@ -183,4 +184,4 @@ Both are using callbacks since we are setting state based on a previous state. A
 
 ## Is that all? 
 
-Of course not, there's always more. For now, I'll see you next time and bring **useEffect** with me. 
+Of course not, there's always more. For now, I'll see you next time and bring **useEffect** with me.
