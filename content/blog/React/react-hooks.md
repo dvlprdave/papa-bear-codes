@@ -31,7 +31,7 @@ I've created a small project that displays two planets using [**React Kawaii**](
 
 ## Class Component
 
-```javascript
+```jsx
 import React, { Component } from 'react';
 import { Planet } from 'react-kawaii';
 
@@ -80,7 +80,7 @@ I am also using an arrow function for the ```handleToggle``` method to avoid bin
 
 ## Functional Component
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 import { Planet } from 'react-kawaii';
 

@@ -1,3 +1,5 @@
+// Prism styles
+
 @import './variables.scss';
 
 .gatsby-highlight-code-line {
@@ -20,7 +22,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.gatsby-highlight::before {
+.gatsby-highlight pre[class*="language-"]::before {
   background: black;
   border-radius: 0 0 0.25rem 0.25rem;
   color: white;
@@ -32,14 +34,30 @@
   text-align: right;
   text-transform: uppercase;
   top: 0;
-  z-index: 9999999;
 }
 
-.gatsby-highlight::before {
-  content: "js";
+.gatsby-highlight pre[class="language-javascript"]::before {
+  content: "JS";
   background: #f7df1e;
   color: black;
-  z-index: 3355;
+}
+
+.gatsby-highlight pre[class="language-jsx"]::before {
+  content: "JSX";
+  background: #51DAFB;
+  color: black;
+}
+
+.gatsby-highlight pre[class="language-css"]::before {
+  content: "CSS";
+  background: #E34F26;
+  color: white;
+}
+
+.gatsby-highlight pre[class="language-shell"]::before {
+  content: "Shell";
+  background:#adadad;
+  color: black;
 }
 
 .gatsby-highlight pre[class*="language-"].line-numbers {

@@ -45,7 +45,7 @@ We then include a set of backticks and within those backticks, you'd begin to wr
 
 Create a React project and test it out yourself.
 
-```
+```shell
 npx create-react-app styled-component-playground
 cd styled-component-playground
 yarn start
@@ -58,7 +58,7 @@ Open the app on: http://localhost:3000/
 
 Let's add styled-components to our project by entering the following in the terminal:
 
- ```
+ ```shell
  npm i --save styled-components
  ```
 
