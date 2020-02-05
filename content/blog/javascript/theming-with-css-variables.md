@@ -195,3 +195,7 @@ Lastly, we loop over each input and attach an event listener to the input event 
 ```
 
 I've decided to use the **input event** rather than the **change event** because input events fire as soon as the value on an input changes, rather than waiting for the value to be fully set. This allows us to see the value change as we slide our input slider and move our cursor around the color input.
+
+## Wrapping up
+
+Hopefully you have a better understanding of CSS variables and how to use them in a dynamic way. Feel free to further build out the porject I started and build something cool!
