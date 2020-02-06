@@ -198,4 +198,4 @@ I've decided to use the **input event** rather than the **change event** because
 
 ## Wrapping up
 
-Hopefully you have a better understanding of CSS variables and how to use them in a dynamic way. Feel free to further build out the porject I started and build something cool!
+Hopefully you have a better understanding of CSS variables and how to use them in a dynamic way. Feel free to further build out the project I started and build something cool!
