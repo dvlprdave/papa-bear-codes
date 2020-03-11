@@ -4,6 +4,7 @@ date: 2020-08-03 08:11:20
 category: React
 ---
 
+
 In this guide, we'll utilize `gatsby-plugin-feed` to generate an RSS feed that contains blog posts from a Gatsby site. We'll then use the RSS feed to display that data dynamically onto a different site using an NPM package called [**rss-parser**](https://www.npmjs.com/package/rss-parser).
 
 > **Note:** 
@@ -31,7 +32,7 @@ In order to get the plugin to do what we want, we need to install it and make so
 
 Head into your `gatsby-config.js` file and insert the following into the plugins array:
 
-> Navigating the plugins array can be tricky. What you need to keep in mind, is that each plugin is an object within an array. As we know, arrays are comma seperated. Each plugin will come after the other by adding a comma, followed by the new plugin and its configuration options (if there are any). 
+> Navigating the plugins array can be tricky. What you need to keep in mind, is that each plugin is an object within an array. As we know, arrays are comma-separated. Each plugin will come after the other by adding a comma, followed by the new plugin and its configuration options (if there are any). 
 
 ```javaScript
  {
@@ -98,7 +99,7 @@ The `gatsby-feed-plugin` options are doing several things for us:
 - Using `allMarkdownRemark` for any related files and fields
 - Gives fields for RSS file name and title  
 
-What we want to focus on are the `output` and `title` fields. The `output` field will be the path in our url and the `title` field will be the name of your RSS feed. 
+What we want to focus on are the `output` and `title` fields. The `output` field will be the path in our URL and the `title` field will be the name of your RSS feed. 
 
 You can configure your field options like so: 
 
@@ -126,13 +127,13 @@ Once Gatsby has done its thing, you should see the following in your terminal:
 gatsby serve running at: http://localhost:9000/
 ```
 
-Open the link and add your RSS path to the end of the url like so:
+Open the link and add your RSS path to the end of the URL like so:
 
 ```shell
 http://localhost:9000/rss.xml
 ```
 
-You should now see your blog posts in XML format. Your RSS feed is officially set! Now, lets take our newly created feed and do something with it. 
+You should now see your blog posts in XML format. Your RSS feed is officially set! Now, let's take our newly created feed and do something with it. 
 
 ## Using our RSS feed
 
@@ -156,9 +157,9 @@ I implemented the [rss-parser](https://www.npmjs.com/package/rss-parser) library
   }
 ```
 
-What I did above was create an asynchronous function `rssData` that grabs my RSS feed and parses it into a JavaScript object. If you're wondering what the `CORS_PROXY` variable is, it contains a url to an API that allows cross-origin requests anywhere. This is needed because some RSS feeds will not load due to CORS security. 
+In the snippet above, I created an asynchronous function `rssData` that grabs my RSS feed and parses it into a JavaScript object. If you're wondering what the `CORS_PROXY` variable is, it contains a URL to an API that allows cross-origin requests anywhere. This is needed because some RSS feeds will not load due to CORS security. 
 
-If you're unfamilair with async await and prefer callbacks or promises, rss-parser uses a callback in their documentation example: 
+If you're unfamiliar with async await and prefer callbacks or promises, rss-parser uses a callback in their documentation example: 
 
 ```javaScript
 const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
