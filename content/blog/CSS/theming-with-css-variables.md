@@ -1,7 +1,7 @@
 ---
 title: Theming with CSS variables
 date: 2020-01-31 07:01:22
-category: JavaScript
+category: CSS
 ---
 
 Out of pure meddling and frustration over being stuck on a project for a lot longer than expected, I learned quite a bit about CSS variables and how they allow us to make dynamic changes with ease.

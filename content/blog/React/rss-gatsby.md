@@ -1,6 +1,6 @@
 ---
 title: Dynamically loaded content with RSS and Gatsby. 
-date: 2020-08-03 08:11:20
+date: 2020-03-08 08:11:20
 category: React
 ---
 
