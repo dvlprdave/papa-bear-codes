@@ -6,7 +6,8 @@ GitHubTheme.overrideThemeStyles = () => {
     p: {
       fontSize: 'calc(14px + .5vw)',
       lineHeight: '1.6',
-      fontWeight: 200
+      fontWeight: 200,
+      padding: '.7rem 0'
     },
     a: {
       boxShadow: `none`,
@@ -23,7 +24,7 @@ GitHubTheme.overrideThemeStyles = () => {
     },
 
     h1: {
-      fontSize: 'calc(19px + 1.3vw)',
+      fontSize: 'calc(16px + 1.2vw)',
       fontWeight: 800,
       lineHeight: 'calc(35px + 1.85vw)',
       fontFamily: 'Catamaran',
