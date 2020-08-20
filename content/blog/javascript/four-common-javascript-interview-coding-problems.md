@@ -1,7 +1,7 @@
 ---
 title: Four common JavaScript interview coding problems
 date: 2020-08-19 12:08:58
-category: Javascript
+category: JavaScript
 ---
 
 ### Short story 
