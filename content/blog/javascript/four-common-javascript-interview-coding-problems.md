@@ -5,16 +5,19 @@ category: javascript
 ---
 
 ### Short story 
-I recently had a technical interview with an amazing company in which I genuinly knew the answers, but if you had asked me what my name was **during** that interview, I would have struggled. :sob:
+I recently had a technical interview with an amazing company in which I genuinely knew the answers, but if you had asked me what my name was **during** that interview, I would have struggled. :sob:
 
-I kept apologizing during the interview and my mind was shot with nerves, so here's my self redemption and help for those currently interviewing or planning to. 
+I kept apologizing during the interview and my mind was shot with nerves, so here's my self-redemption and help for those currently interviewing or planning to.
 
+**A message to myself and others who might find it useful:**
+
+> Take it easy and breathe. Wiggle your toes to let out the anxiety if you have to. Coding problem sets are concepts you know. You've got this! It's a matter of breaking things down line by line and connecting the pieces.
 
 ## 1. Palindrome
 
-> A palindrome is a word that can be read the same backwards or forwards.
+> A palindrome is a word that can be read the same backward or forwards.
 
-**Challenge**: Return true if the given string is apalindrome. Otherwise, return false.
+**Challenge**: Return true if the given string is a palindrome otherwise return false.
 
 **Solution 1**
 
@@ -69,7 +72,7 @@ if(typeof string === 'string' & string === revString)
 
 Above we are saying if the string we pass in is the type of `string` and our string is equal to our string in reverse, then return true otherwise false. This ensures we pass in a string instead of another data type. 
 
-## 2. Find sum of n numbers
+## 2. Find the sum of n numbers
 
 **Challenge**: Create a function that gets the sum of all numbers passed in as an argument. 
 
@@ -94,7 +97,7 @@ The first thing we need to do is create a variable that will hold our total sum 
 let total = 0
 ```
 
-Then we use `for...of` to loop over the functions arguments. We have access to these arguments through the arguments object by calling the `arguments` keyword.
+Then we use `for...of` to loop over the function's arguments. We have access to these arguments through the arguments object by calling the `arguments` keyword.
 
 >Excessive use of the word arguments. Sorry, not sorry lol
 
@@ -104,7 +107,7 @@ for (let num of arguments) {
 }
 ```
 
-Above we are looping over every item in our arguments array which in our case are numbers and then we add each number to our `total`on every iteration.  
+Above we are looping over every item in our arguments array which in our case are numbers and then we add each number to our `total` on every iteration.  
 
 **Solution 2**
 
@@ -128,7 +131,7 @@ Reduce takes in a callback function followed by an initial value which is zero. 
 
 The reduce method will iterate over our arguments and add each number to the accumulator giving us a final sum. 
 
-> This is my go to article whenever I'm having trouble remebering the details of reduce. [Alligator.io Understanding the JavaScript Reduce Method](https://alligator.io/js/finally-understand-reduce/)
+> This is my go-to article whenever I'm having trouble remembering the details of reduce. [Alligator.io Understanding the JavaScript Reduce Method](https://alligator.io/js/finally-understand-reduce/)
 
 ## 3. FizzBuzz
 
@@ -151,7 +154,7 @@ const fizzBuzz = () => {
 
 fizzBuzz()
 ```
-First we create a `for loop` to iterate from 1 to 100. We then create a variable called `output` that will store each element. 
+First, we create a `for loop` to iterate from 1 to 100. We then create a variable called `output` that will store each element. 
 
 > It's easy to slip up when writing for loops, so be sure to check that you are within the correct bounds of the number range you are given. For example, make sure you're iterating from 1 - 100 and not 0 - 100 or 0 - 99. 
 
@@ -215,13 +218,13 @@ This states that if our input `sentence` isn't a type of string then we want to 
 
 If our edge case passes then we want to return our capitalized words using method chaining. 
 
-Taking our `sentence` we use the `split(' ')` method to turn our `sentence` into an array of substrings. The empty string within `split()` must have a space as we want to seperate each word, not each character. 
+Taking our `sentence` we use the `split(' ')` method to turn our `sentence` into an array of substrings. The empty string within `split()` must have an empty space as we want to separate each word, not each character. 
 
 ```js
 sentence.split(' ')
 ```
 
-Then we add on the higher order function `map()` to iterate over each word, grab the first character of each word using `charAt(0)` and then capitalize that character (letter) using the `toUpperCase()` method. Currently, our `map()` is **only** returning the first letter of each sentence capitalized in an array: 
+Then we add on `map()` to iterate over each word, grab the first character of each word using `charAt(0)` and then capitalize that character (letter) using the `toUpperCase()` method. Currently, our `map()` is **only** returning the first letter of each sentence capitalized in an array: 
 
 ```js
 //  our sentence is  --> 'every first letter will be capitalized'
@@ -250,4 +253,6 @@ console.log(captilizeAllWords('every first letter will be capitalized'))
 
 ## Closing
 
-Hopefully you found this articele and t
+There are a ton of ways you can go about solving each of these problems so feel free to find alternate solutions that you feel comfortable with. The key is to understand what you're doing and avoid memorizing solutions. It could come back and bite you in the long run. :see_no_evil:
+
+Hope you found this article helpful!
