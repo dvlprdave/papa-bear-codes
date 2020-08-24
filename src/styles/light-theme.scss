@@ -60,16 +60,6 @@ body.light {
     &:hover {
       text-shadow: $light-hover-text-shadow;
     }
-    
-    &::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      height: 1em;
-      width: 100%;
-      border-bottom: 1px solid black;
-      margin-top: 5px;
-    }
   }
 
   .footer {
