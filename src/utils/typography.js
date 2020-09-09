@@ -4,7 +4,7 @@ import GitHubTheme from 'typography-theme-github'
 GitHubTheme.overrideThemeStyles = () => {
   return {
     p: {
-      fontSize: 'calc(14px + .4vw)',
+      fontSize: 'calc(16px + .2vw)',
       lineHeight: '1.6',
       fontWeight: 200,
       padding: '.7rem 0'

@@ -29,6 +29,7 @@ body.dark {
   }
 
   .category-container {
+    background-color: $dark-category-background-color;
     .item {
       border: 1px solid $dark-category-border-color;
       background-color: $dark-category-item-color;
