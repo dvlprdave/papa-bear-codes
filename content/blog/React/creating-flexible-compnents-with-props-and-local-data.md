@@ -4,7 +4,9 @@ date: 2020-09-09 11:09:25
 category: React
 ---
 
-I was updating my old portfolio when I came across some code I had written awhile back and found a lot of it to be clunky and ugly. In this article, we'll be focusing on one component in specific that we'll dive into and refactor while focusing on re-usability and props.
+In this article, we'll be focusing on one component in specific that we'll dive into and refactor while focusing on re-usability and props.
+
+This came about as I was updating my portfolio and came across a really ugly and inefficient component that needed some work. 
 
 The component in question was this `Projects` component. It simply rendered multiple card components (`ProjctCard`) to showcase various projects. Each card received props to display its respective information with different values:
 
